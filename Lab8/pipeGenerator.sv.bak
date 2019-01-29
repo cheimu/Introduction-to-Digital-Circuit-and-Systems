@@ -1,0 +1,44 @@
+module pipeGenerator(Clock, Reset, gameStart, gameOver, num, pipe);
+
+	input logic Clock, Reset, gameStart, gameOver;
+	input logic [2:0] num;
+	logic [1:0] gap;
+	logic [7:0] ns;
+	output logic [7:0] pipe;
+	
+	always_comb
+		if (over)
+			ns = pipe;
+		else begin
+			if (gap == 0)
+				case(num)
+					3'b000: ns = 8'b10011111;
+					3'b001: ns = 8'b11011111;
+					3'b010: ns = 8'b11100011;
+					3'b011: ns = 8'b10000001;
+					3'b100: ns = 8'b11000011;
+					3'b101: ns = 8'b10011111;
+					3'b110: ns = 8'b00001111;
+					3'b111: ns = 8'b10000011;
+					default: ns = 8'b00000000;
+				endcase;
+			else
+				ns = 8'b00000000;
+		end
+	
+	always_ff @(posedge Clock)
+		if (Reset | ~gameStart) begin 
+			pipe <= 8'b00000000;
+			gap <= 2'b00;
+		end
+		else begin
+			if	(gap != 2'b11) begin 
+				if(gap == 2'00) 
+					pipe <= ns;
+				gap <= gap + 2'b01;
+			end
+			else
+				gap <= 2'b00;
+		end		
+		
+endmodule;

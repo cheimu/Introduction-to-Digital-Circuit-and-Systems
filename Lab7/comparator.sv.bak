@@ -1,0 +1,9 @@
+module comparator(numA, numB, result);
+	input logic numA, numB;
+	output logic result;
+	
+	always_comb 
+		if (numA > numB) result = 1'b1;
+		else result = 1'b0;
+		
+endmodule

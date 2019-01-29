@@ -1,0 +1,22 @@
+module pipeShifter(Clock, Reset, rightPipe, gameStart, gameOver, pipe);
+	input logic Clock, Reset, gameStart, gameOver;
+	input logic [7:0] rightPipe;
+	
+	logic [7:0] ns;
+	
+	output logic [7:0] pipe;
+	
+	
+	always_comb
+		if (gameOver)
+			ns = pipe;
+		else
+			ns = rightPipe;
+	
+	always_ff @(posedge Clock)
+		if (Reset | !gameStart)
+			pipe <= 8'b00000000;
+		else
+			pipe <= ns;
+		
+endmodule;	

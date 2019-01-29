@@ -1,0 +1,14 @@
+module LFSR(Clock, Reset, Input, Q);
+	input logic Clock, Reset, Input;
+	logic ps;
+	output logic Q;
+	
+	assign Q = ps;
+	
+	always_ff @(posedge Clock)
+		if (Reset)
+			ps <= 1'b0;
+		else 
+			ps <= Input;
+		
+endmodule			

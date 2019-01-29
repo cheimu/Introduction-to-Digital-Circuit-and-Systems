@@ -1,0 +1,28 @@
+module gameOver(Clock, Reset, cc, pipe, gameStart, point, over);
+
+	input logic Clock, Reset, gameStart;
+	input logic [7:0] cc, pipe;
+	
+	logic nscc, pscc;
+	logic [7:0] nsp, psp;
+	output logic over, point;
+	
+	always_comb begin
+		nscc = cc[0] 
+					| (cc[7] & pipe[7])
+					| (cc[6] & pipe[6])
+					| (cc[5] & pipe[5])
+					| (cc[4] & pipe[4])
+					| (cc[3] & pipe[3])
+					| (cc[2] & pipe[2])
+					| (cc[1] & pipe[1]);
+		nsp = pipe;
+	end
+	
+	assign over = nscc;
+	assign point = ~(psp == 8'b00000000) & (pipe == 8'b00000000);
+	
+	always_ff @(posedge Clock)
+		if (Reset | !gameStart) begin
+			over <= 1'b0;
+			point <= 1'b0

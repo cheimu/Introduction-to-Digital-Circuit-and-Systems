@@ -1,0 +1,18 @@
+module gameStart(Clock, Reset, Input, start);
+	input logic Clock, Reset, Input;
+	logic ps, ns;
+	output logic start;
+	
+	always_comb
+		ns = ps | Input;
+		
+	always_ff @(posedge Clock)
+		if (Reset)
+			ps <= 1'b0;
+		else 
+			ps <= ns;
+			
+	assign start = ps;
+endmodule
+	
+	

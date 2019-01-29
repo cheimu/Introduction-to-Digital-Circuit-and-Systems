@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dU:/EE271/Lab3
+vDE1_SoC
+Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1486147728
+!i10b 1
+!s100 GDXTNH5D08aBm06FRT7lf2
+IDadU3Ao5NDIMCLMl41=h53
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 !s105 DE1_SoC_sv_unit
+S1
+Z3 dU:/EE271/Lab4
+Z4 w1485750846
+Z5 8./DE1_SoC.sv
+Z6 F./DE1_SoC.sv
+L0 2
+Z7 OV;L;10.3c;59
+r1
+!s85 0
+31
+Z8 !s108 1486147728.471000
+Z9 !s107 ./DE1_SoC.sv|
+Z10 !s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R0
+!s110 1486147729
+!i10b 1
+!s100 MmYCJR66B3kMPoh=Zi7090
+ICPLj0^FLkS24bYV676JCV1
+R1
+R2
+S1
+R3
+R4
+R5
+R6
+L0 77
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+n@d@e1_@so@c_testbench
+vseg7
+R0
+Z11 !s110 1486148024
+!i10b 1
+!s100 Q71EENofGCVLD8W0zhQ7i1
+IHRRFYfUSW:BdQ7jkUP5Tj3
+R1
+Z12 !s105 seg7_sv_unit
+S1
+R3
+Z13 w1485752640
+Z14 8./seg7.sv
+Z15 F./seg7.sv
+L0 1
+R7
+r1
+!s85 0
+31
+Z16 !s108 1486148024.097000
+Z17 !s107 ./seg7.sv|
+Z18 !s90 -reportprogress|300|./seg7.sv|
+!i113 1
+vseg7_testbench
+R0
+R11
+!i10b 1
+!s100 1>0=OD7[^aERn31>Y5gfZ3
+IHMCcblFIVcmVNY29kQZRR2
+R1
+R12
+S1
+R3
+R13
+R14
+R15
+L0 37
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1

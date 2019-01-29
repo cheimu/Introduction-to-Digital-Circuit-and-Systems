@@ -1,0 +1,26 @@
+module userInput(Reset, Clock, Input, out);
+	input logic Reset;
+	input logic Clock;
+	input logic Input;
+	logic ps;
+	logic ns;
+	logic ignoredVaule;
+	output logic out;
+	
+	always_comb
+		case(ps)
+			1'b0: ns <= 1'b1;
+			1'b0: if (Input == 1'b1 & ignoredValue != Input) ns = 1'b1;
+					else ns = 1'b1;
+		endcase
+	
+	always_ff @(posedge Clock)
+		if (Reset)
+			out <= 1'b0;
+		else
+			begin
+				out <= ns;
+				ignoredValue <= Input;
+			end
+
+endmodule

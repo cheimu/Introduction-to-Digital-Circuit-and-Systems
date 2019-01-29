@@ -1,0 +1,63 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 11:00:09 on Feb 17,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 11:00:11 on Feb 17,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 11:00:11 on Feb 17,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.userInput
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(119)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 11:08:50 on Feb 17,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 11:08:51 on Feb 17,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 11:08:52 on Feb 17,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.userInput
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(119)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
+# MACRO ./runlab.do PAUSED at line 25
+# End time: 11:15:37 on Feb 17,2017, Elapsed time: 0:06:45
+# Errors: 0, Warnings: 0

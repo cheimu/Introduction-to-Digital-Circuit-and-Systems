@@ -1,0 +1,58 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:21:52 on Mar 08,2017
+# vlog -reportprogress 300 ./CC.sv 
+# -- Compiling module CC
+# -- Compiling module CC_testbench
+# 
+# Top level modules:
+# 	CC_testbench
+# End time: 22:21:53 on Mar 08,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 22:21:53 on Mar 08,2017
+# Loading sv_std.std
+# Loading work.CC_testbench
+# Loading work.CC
+# ** Error: Cannot open macro file: CC_wave.do
+# Error in macro ./runlab.do line 17
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+add wave -position end sim:/CC_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf U:/EE271/Lab8/CC_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:22:30 on Mar 08,2017
+# vlog -reportprogress 300 ./CC.sv 
+# -- Compiling module CC
+# -- Compiling module CC_testbench
+# 
+# Top level modules:
+# 	CC_testbench
+# End time: 22:22:31 on Mar 08,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:22:32 on Mar 08,2017
+# Loading sv_std.std
+# Loading work.CC_testbench
+# Loading work.CC
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./CC.sv(100)
+#    Time: 1700 ps  Iteration: 1  Instance: /CC_testbench
+# Break in Module CC_testbench at ./CC.sv line 100
+# Simulation Breakpoint: Break in Module CC_testbench at ./CC.sv line 100
+# MACRO ./runlab.do PAUSED at line 25
+# WARNING: No extended dataflow license exists
+# End time: 23:28:40 on Mar 08,2017, Elapsed time: 1:06:08
+# Errors: 0, Warnings: 1

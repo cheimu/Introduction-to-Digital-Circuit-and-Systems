@@ -1,0 +1,25 @@
+module CC(Clock, Reset, Input, gameOver, gameStart, beginningPosition, nu, nd, light, limit);
+	input logic Clock, Reset, Input, gameOver, gameSetUp, beginningPosition, nu, nd limit;
+	logic ns;
+	output logic light
+	
+	always_comb	
+		if (gameOver) 
+			ns = light;
+		else begin
+			case(light)
+				1'b0: if ((Input & nd) | (~Input & nu)) ns = 1'b1;
+						else ns = 1'b0;
+				1'b1: if (limit & Input) ns = 1'b1;
+						else ns = 1'b0;
+			endcase
+		end
+		
+	alway_ff @(posedge Clock)
+		if (Reset & !gameStart)
+			light <= bieinningPosition;
+		else 
+			light <= ns;
+			
+end;
+			

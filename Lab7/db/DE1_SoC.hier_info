@@ -1,0 +1,474 @@
+|DE1_SoC
+CLOCK_50 => CLOCK_50.IN1
+HEX0[0] <= victory:winner.displayHuman[0]
+HEX0[1] <= victory:winner.displayHuman[1]
+HEX0[2] <= victory:winner.displayHuman[2]
+HEX0[3] <= victory:winner.displayHuman[3]
+HEX0[4] <= victory:winner.displayHuman[4]
+HEX0[5] <= victory:winner.displayHuman[5]
+HEX0[6] <= victory:winner.displayHuman[6]
+HEX1[0] <= victory:winner.displayCyber[0]
+HEX1[1] <= victory:winner.displayCyber[1]
+HEX1[2] <= victory:winner.displayCyber[2]
+HEX1[3] <= victory:winner.displayCyber[3]
+HEX1[4] <= victory:winner.displayCyber[4]
+HEX1[5] <= victory:winner.displayCyber[5]
+HEX1[6] <= victory:winner.displayCyber[6]
+HEX2[0] <= <VCC>
+HEX2[1] <= <VCC>
+HEX2[2] <= <VCC>
+HEX2[3] <= <VCC>
+HEX2[4] <= <VCC>
+HEX2[5] <= <VCC>
+HEX2[6] <= <VCC>
+HEX3[0] <= <VCC>
+HEX3[1] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[4] <= <VCC>
+HEX3[5] <= <VCC>
+HEX3[6] <= <VCC>
+HEX4[0] <= <VCC>
+HEX4[1] <= <VCC>
+HEX4[2] <= <VCC>
+HEX4[3] <= <VCC>
+HEX4[4] <= <VCC>
+HEX4[5] <= <VCC>
+HEX4[6] <= <VCC>
+HEX5[0] <= <VCC>
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] <= <GND>
+LEDR[1] <= normalLight:LEDR1.lightOn
+LEDR[2] <= normalLight:LEDR2.lightOn
+LEDR[3] <= normalLight:LEDR3.lightOn
+LEDR[4] <= normalLight:LEDR4.lightOn
+LEDR[5] <= centerLight:LEDR5.lightOn
+LEDR[6] <= normalLight:LEDR6.lightOn
+LEDR[7] <= normalLight:LEDR7.lightOn
+LEDR[8] <= normalLight:LEDR8.lightOn
+LEDR[9] <= normalLight:LEDR9.lightOn
+SW[0] => num[0].IN1
+SW[1] => num[1].IN1
+SW[2] => num[2].IN1
+SW[3] => num[3].IN1
+SW[4] => num[4].IN1
+SW[5] => num[5].IN1
+SW[6] => num[6].IN1
+SW[7] => num[7].IN1
+SW[8] => num[8].IN1
+SW[9] => w.DATAIN
+
+
+|DE1_SoC|clock_divider:cdiv
+clock => divided_clocks[0]~reg0.CLK
+clock => divided_clocks[1]~reg0.CLK
+clock => divided_clocks[2]~reg0.CLK
+clock => divided_clocks[3]~reg0.CLK
+clock => divided_clocks[4]~reg0.CLK
+clock => divided_clocks[5]~reg0.CLK
+clock => divided_clocks[6]~reg0.CLK
+clock => divided_clocks[7]~reg0.CLK
+clock => divided_clocks[8]~reg0.CLK
+clock => divided_clocks[9]~reg0.CLK
+clock => divided_clocks[10]~reg0.CLK
+clock => divided_clocks[11]~reg0.CLK
+clock => divided_clocks[12]~reg0.CLK
+clock => divided_clocks[13]~reg0.CLK
+clock => divided_clocks[14]~reg0.CLK
+clock => divided_clocks[15]~reg0.CLK
+clock => divided_clocks[16]~reg0.CLK
+clock => divided_clocks[17]~reg0.CLK
+clock => divided_clocks[18]~reg0.CLK
+clock => divided_clocks[19]~reg0.CLK
+clock => divided_clocks[20]~reg0.CLK
+clock => divided_clocks[21]~reg0.CLK
+clock => divided_clocks[22]~reg0.CLK
+clock => divided_clocks[23]~reg0.CLK
+clock => divided_clocks[24]~reg0.CLK
+clock => divided_clocks[25]~reg0.CLK
+clock => divided_clocks[26]~reg0.CLK
+clock => divided_clocks[27]~reg0.CLK
+clock => divided_clocks[28]~reg0.CLK
+clock => divided_clocks[29]~reg0.CLK
+clock => divided_clocks[30]~reg0.CLK
+clock => divided_clocks[31]~reg0.CLK
+divided_clocks[0] <= divided_clocks[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[1] <= divided_clocks[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[2] <= divided_clocks[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[3] <= divided_clocks[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[4] <= divided_clocks[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[5] <= divided_clocks[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[6] <= divided_clocks[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[7] <= divided_clocks[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[8] <= divided_clocks[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[9] <= divided_clocks[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[10] <= divided_clocks[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[11] <= divided_clocks[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[12] <= divided_clocks[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[13] <= divided_clocks[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[14] <= divided_clocks[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[15] <= divided_clocks[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[16] <= divided_clocks[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[17] <= divided_clocks[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[18] <= divided_clocks[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[19] <= divided_clocks[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[20] <= divided_clocks[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[21] <= divided_clocks[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[22] <= divided_clocks[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[23] <= divided_clocks[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[24] <= divided_clocks[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[25] <= divided_clocks[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[26] <= divided_clocks[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[27] <= divided_clocks[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[28] <= divided_clocks[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[29] <= divided_clocks[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[30] <= divided_clocks[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[31] <= divided_clocks[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random
+Clock => Clock.IN10
+Reset => Reset.IN10
+Output[0] <= pattern[0].DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= pattern[1].DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= pattern[2].DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= pattern[3].DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= pattern[4].DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= pattern[5].DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= pattern[6].DB_MAX_OUTPUT_PORT_TYPE
+Output[7] <= pattern[7].DB_MAX_OUTPUT_PORT_TYPE
+Output[8] <= pattern[8].DB_MAX_OUTPUT_PORT_TYPE
+Output[9] <= LFSR:bit9.Q
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit0
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit1
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit2
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit3
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit4
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit5
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit6
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit7
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit8
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|LFSR_10:random|LFSR:bit9
+Clock => ps.CLK
+Reset => ps.OUTPUTSELECT
+Input => ps.DATAA
+Q <= ps.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|comparator:cyber
+numA[0] => LessThan0.IN10
+numA[1] => LessThan0.IN9
+numA[2] => LessThan0.IN8
+numA[3] => LessThan0.IN7
+numA[4] => LessThan0.IN6
+numA[5] => LessThan0.IN5
+numA[6] => LessThan0.IN4
+numA[7] => LessThan0.IN3
+numA[8] => LessThan0.IN2
+numA[9] => LessThan0.IN1
+numB[0] => LessThan0.IN20
+numB[1] => LessThan0.IN19
+numB[2] => LessThan0.IN18
+numB[3] => LessThan0.IN17
+numB[4] => LessThan0.IN16
+numB[5] => LessThan0.IN15
+numB[6] => LessThan0.IN14
+numB[7] => LessThan0.IN13
+numB[8] => LessThan0.IN12
+numB[9] => LessThan0.IN11
+result <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|userInput:leftButton
+Reset => out.OUTPUTSELECT
+Reset => ignoredValue.OUTPUTSELECT
+Clock => ignoredValue.CLK
+Clock => out~reg0.CLK
+Clock => Input2.CLK
+Clock => Input1.CLK
+Input => Input1.DATAIN
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|userInput:rightButton
+Reset => out.OUTPUTSELECT
+Reset => ignoredValue.OUTPUTSELECT
+Clock => ignoredValue.CLK
+Clock => out~reg0.CLK
+Clock => Input2.CLK
+Clock => Input1.CLK
+Input => Input1.DATAIN
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR1
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR2
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR3
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR4
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|centerLight:LEDR5
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR6
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR7
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR8
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normalLight:LEDR9
+Clock => lightOn~reg0.CLK
+Reset => lightOn.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN1
+L => always0.IN1
+L => always0.IN0
+R => always0.IN1
+R => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= lightOn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|victory:winner
+Clock => psCyber[0].CLK
+Clock => psCyber[1].CLK
+Clock => psCyber[2].CLK
+Clock => ps[0].CLK
+Clock => ps[1].CLK
+Clock => ps[2].CLK
+Reset => ps.OUTPUTSELECT
+Reset => ps.OUTPUTSELECT
+Reset => ps.OUTPUTSELECT
+Reset => psCyber.OUTPUTSELECT
+Reset => psCyber.OUTPUTSELECT
+Reset => psCyber.OUTPUTSELECT
+ResetPlayfield <= ResetPlayfield.DB_MAX_OUTPUT_PORT_TYPE
+L => always0.IN0
+L => always0.IN0
+R => always0.IN1
+R => always0.IN1
+MostLeft => always0.IN1
+MostRight => always0.IN1
+displayHuman[0] <= seg7:human.display
+displayHuman[1] <= seg7:human.display
+displayHuman[2] <= seg7:human.display
+displayHuman[3] <= seg7:human.display
+displayHuman[4] <= seg7:human.display
+displayHuman[5] <= seg7:human.display
+displayHuman[6] <= seg7:human.display
+displayCyber[0] <= seg7:cyber.display
+displayCyber[1] <= seg7:cyber.display
+displayCyber[2] <= seg7:cyber.display
+displayCyber[3] <= seg7:cyber.display
+displayCyber[4] <= seg7:cyber.display
+displayCyber[5] <= seg7:cyber.display
+displayCyber[6] <= seg7:cyber.display
+
+
+|DE1_SoC|victory:winner|seg7:human
+ps[0] => Decoder0.IN2
+ps[1] => Decoder0.IN1
+ps[2] => Decoder0.IN0
+display[0] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|victory:winner|seg7:cyber
+ps[0] => Decoder0.IN2
+ps[1] => Decoder0.IN1
+ps[2] => Decoder0.IN0
+display[0] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,111 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:44:32 on Feb 24,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 10:44:34 on Feb 24,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 10:44:34 on Feb 24,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.LFSR_10
+# Loading work.LFSR
+# Loading work.comparator
+# Loading work.userInput
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(153)
+#    Time: 6150 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 153
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 153
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:48:35 on Feb 24,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 10:48:37 on Feb 24,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 10:48:37 on Feb 24,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.LFSR_10
+# Loading work.LFSR
+# Loading work.comparator
+# Loading work.userInput
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(183)
+#    Time: 8950 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 183
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 183
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:49:15 on Feb 24,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 10:49:16 on Feb 24,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 10:49:21 on Feb 24,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.LFSR_10
+# Loading work.LFSR
+# Loading work.comparator
+# Loading work.userInput
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(264)
+#    Time: 16750 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 264
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 264
+# MACRO ./runlab.do PAUSED at line 25
+# End time: 10:57:31 on Feb 24,2017, Elapsed time: 0:08:10
+# Errors: 0, Warnings: 0

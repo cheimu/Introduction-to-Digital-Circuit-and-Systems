@@ -1,0 +1,54 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:08:14 on Jan 20,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 10:08:15 on Jan 20,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 10:08:15 on Jan 20,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# ** Error: Cannot open macro file: DE1_SoC.do
+# Error in macro ./runlab.do line 17
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+# Load canceled
+add wave -position insertpoint sim:/DE1_SoC_testbench/dut/*
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf U:/lab2/DE1_SoC.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:16:50 on Jan 20,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 10:16:50 on Jan 20,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 10:16:51 on Jan 20,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 10:21:57 on Jan 20,2017, Elapsed time: 0:05:06
+# Errors: 0, Warnings: 0

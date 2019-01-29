@@ -1,0 +1,33 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:53:44 on Feb 03,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 10:53:44 on Feb 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 10:53:44 on Feb 03,2017
+# Loading sv_std.std
+# Loading work.seg7_testbench
+# Loading work.seg7
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: gaohol  Hostname: EE-361PC09  ProcessID: 2196
+# 
+#           Attempting to use alternate WLF file "./wlftq7scb7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftq7scb7
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 10:59:36 on Feb 03,2017, Elapsed time: 0:05:52
+# Errors: 0, Warnings: 2
